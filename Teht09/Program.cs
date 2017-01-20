@@ -10,6 +10,13 @@ namespace Teht09
     {
         static void Main(string[] args) //kommentti
         {
+            int luku;
+
+            while (luku != 0) {
+                Console.WriteLine("Anna luku: ");
+                luku = int.Parse(Console.ReadLine());
+
+            }
 
         }
     }
