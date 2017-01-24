@@ -8,16 +8,25 @@ namespace Teht09
 {
     class Program
     {
-        static void Main(string[] args) //kommentti
+        static void Main(string[] args)
         {
-            int luku;
+            int summa = 0;
+            int luku = 1;
 
-            while (luku != 0) {
-                Console.WriteLine("Anna luku: ");
-                luku = int.Parse(Console.ReadLine());
-
+            Console.Write("Anna kokonaisnumero " + luku + " > ");
+            int numero = int.Parse(Console.ReadLine());
+            while (numero != 0)
+            {
+                luku++;
+                summa = (summa + numero);
+                Console.Write("Anna kokonaisnumero " + luku + " > ");
+                numero = int.Parse(Console.ReadLine());
             }
 
+            Console.Write("summa: " + summa + "\n");
+
         }
+
     }
+
 }
